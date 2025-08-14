@@ -1,0 +1,123 @@
+Here’s the extracted text from the images you shared:
+
+---
+
+## Restaurant Billing Software
+
+**Objective:**
+Build a Python-based billing system for restaurants that handles order entry, bill generation with tax/discounts, and reporting. The system should support Dine-In and Takeaway modes and save transactions with payment details.
+
+**Tools & Libraries:**
+
+* Python
+* Tkinter (for GUI) or Streamlit (for Web UI)
+* SQLite3 (for storing menu, orders)
+* datetime (for timestamps)
+* pandas (for reports/export)
+* reportlab / fpdf (optional: for printable PDF bills)
+
+---
+
+### Mini Guide (Step-by-Step Tasks)
+
+**1. Menu Setup + Database**
+
+* Use sqlite3 to create a menu table (item name, category, price, GST).
+* Also create orders and order\_items tables to track transactions.
+
+**2. Build the UI**
+Use Tkinter or Streamlit to:
+
+* Upload menu (admin)
+* Select Dine-In or Takeaway
+* Add/remove items to an order
+* Show running total
+
+**3. Order Management & Calculations**
+
+* Capture selected items and quantity.
+* Auto-calculate subtotal + GST (e.g., 5%) + discount (optional).
+* Select payment method: Cash / Card / UPI
+* Show final total with breakdown.
+
+**4. Bill Generation**
+
+* Display itemized bill on screen.
+* Allow export:
+
+  * As PDF (optional) using fpdf
+  * As CSV or JSON using pandas
+
+**5. Data Storage**
+
+* Store every completed bill:
+
+  * Items, total amount, GST, payment method, date & time
+* Save to SQLite database
+
+**6. Reports Module**
+
+* Daily/weekly/monthly sales summary
+* Most sold items
+* Export as CSV
+
+---
+
+### Deliverables
+
+* **Complete Python Codebase**
+* **GUI or Web UI (Tkinter or Streamlit)**
+* **5 Sample Orders + Menu File**
+* **Database File (.db)**
+* **CSV/JSON Export Examples (Bills & Reports)**
+* **README file with setup steps**
+
+---
+
+### Folder Structure
+
+```
+restaurant_billing/  
+│── app.py  
+│  
+├── db/  
+│   └── restaurant.db  
+│  
+├── data/  
+│   ├── menu.csv  
+│   ├── sample_bills.json  
+│   └── sales_report.csv  
+│  
+├── ui/  
+│   └── main_ui.py (Tkinter or Streamlit)  
+│  
+├── utils/  
+│   ├── calculator.py  
+│   └── db_utils.py  
+│  
+└── README.md  
+```
+
+---
+
+### Test Items
+
+Include these 5 dummy test bills (Dine-In + Takeaway) to simulate:
+
+* Orders with multiple items
+* GST only
+* GST + Discount
+* UPI vs Cash payments
+* **Edge case:** No item selected
+
+---
+
+### Optional Enhancements
+
+* Add login page for Admin/Cashier
+* Auto-print or share bill (email/WhatsApp)
+* Live clock + table management (for dine-in)
+
+---
+
+Do you want me to now **start building the full Python project based on this extracted specification**? This would include all files and folder structure exactly as described.

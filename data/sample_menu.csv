@@ -1,0 +1,24 @@
+name,category,price,gst_rate
+Paneer Tikka,Appetizers,180,5.0
+Chicken Wings,Appetizers,220,5.0
+Veg Spring Rolls,Appetizers,150,5.0
+Fish Fingers,Appetizers,200,5.0
+Butter Chicken,Main Course,320,5.0
+Paneer Butter Masala,Main Course,280,5.0
+Biryani (Chicken),Main Course,350,5.0
+Biryani (Veg),Main Course,280,5.0
+Dal Makhani,Main Course,220,5.0
+Rogan Josh,Main Course,340,5.0
+Butter Naan,Bread & Rice,60,5.0
+Garlic Naan,Bread & Rice,80,5.0
+Basmati Rice,Bread & Rice,120,5.0
+Jeera Rice,Bread & Rice,140,5.0
+Lassi (Sweet),Beverages,80,5.0
+Fresh Lime Soda,Beverages,60,5.0
+Masala Chai,Beverages,40,5.0
+Cold Coffee,Beverages,100,5.0
+Mango Juice,Beverages,90,5.0
+Gulab Jamun,Desserts,120,5.0
+Rasgulla,Desserts,100,5.0
+Ice Cream,Desserts,80,5.0
+Kulfi,Desserts,90,5.0
